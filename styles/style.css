@@ -59,24 +59,26 @@ h3 {
   padding-bottom: var(--baseFont);
   line-height: 1.15em;
 }
+h2 {
+  font-size: var(--bigFontLite);
+  font-weight: 700;
+}
 p {
-  line-height: 1.555em;
+  line-height: 1.875rem; /* 166.667% */
   text-wrap: pretty;
   padding-bottom: var(--baseFont);
-
 }
 button {
   outline: none;
   border: none;
   padding: var(--smFontLite) var(--bigFontLite);
   cursor: pointer;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /* NAV SECTION */
-#navbar{
+#navbar {
   background-color: var(--bgColor);
-
 }
 .container {
   max-width: 120rem;
@@ -94,23 +96,85 @@ button {
   color: white;
   font-weight: 700;
   font-size: var(--smFontLite);
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
 }
 
- .heading  {
+.heading {
   font-size: var(--bigFont);
-font-weight: 700;
-max-width: 44.25rem;
+  font-weight: 700;
+  max-width: 44.25rem;
 }
-.nav_content p{
-     font-size: var(--smFontLite);
-     max-width: 39.625rem;;
+.nav_content p {
+  font-size: var(--smFontLite);
+  max-width: 39.625rem;
 }
-.nav_img{
-     max-width: calc(39.68rem + 3.12rem);
-     /* width: 39.68rem; */
-     padding-top: 3.12rem;
+.nav_img {
+  max-width: calc(39.68rem + 3.12rem);
+  /* width: 39.68rem; */
+  padding-top: 3.12rem;
 }
-.nav_img img{
-     /* width: 100%; */
+/* <!-- Featured Scetion --> */
+#featured {
+  margin-top: 10rem;
+}
+
+.featured_text p {
+  font-size: var(--smFontLite);
+  max-width: 37.125rem;
+  text-align: center;
+  margin: auto;
+  color: var(--neutralDarkColor);
+  margin-bottom: 3rem;
+}
+
+.featured_text p,
+h2 {
+  text-align: center;
+  width: 100%;
+}
+.featured_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.featured_content h3 {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: var(--smFont);
+  padding-right: 0.95rem;
+}
+.featured_content_img {
+  max-width: 29rem;
+}
+.featured_content_img img {
+  max-width: 100%;
+  padding: 6.85rem 4.75rem 0 4.75rem;
+}
+.featured_content .pink {
+  background-color: var(--bgFlower1);
+  border-radius: 18.75rem 18.75rem 0rem 0rem;
+}
+.sky img {
+  padding: 7.3rem 2.94rem 3.2rem 2.94rem;
+}
+.featured_content .sky {
+  background-color: var(--bgFlower2);
+  border-radius: 18.75rem 18.75rem 0rem 0rem;
+}
+.featured_content .gray {
+  background-color: var(--bgFlower3);
+  border-radius: 18.75rem 18.75rem 0rem 0rem;
+}
+/* Span Color dlower */
+.pinkClr {
+  background-color: var(--accentColor);
+}
+.redClr {
+  background-color: hsla(0, 79%, 60%, 0.904);
+}
+.yellowClr {
+  background-color: rgba(255, 255, 27, 0.973);
+}
+.featured_content span {
+  letter-spacing: 0.25rem;
 }
