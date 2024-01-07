@@ -1,0 +1,116 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  /* colors  */
+  --accentColor: hsl(347, 74%, 61%);
+  --accentDarkColor: rgba(255, 255, 255, 0.9);
+  --neutralColor: hsl(0, 0%, 15%);
+  --neutralDarkColor: hsla(0, 0%, 15%, 0.6);
+  --bgColor: rgba(229, 84, 115, 0.1);
+  --bgColor2: rgba(39, 39, 39, 0.05);
+  --bgFlower1: rgba(167, 33, 98, 0.15);
+  --bgFlower2: rgba(5, 151, 160, 0.15);
+  --bgFlower3: rgba(71, 125, 17, 0.15);
+  /* Typo */
+  --bigFont: 5rem;
+  --bigFontLite: 2.5rem;
+  --mdFont: 2rem;
+  --mdFontLite: 1.75rem;
+  --smFont: 1.5rem;
+  --smFontLite: 1.25rem;
+  --baseFont: 1rem;
+  --baseFontFamily: "Lato", sans-serif;
+}
+
+/* Reset  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--baseFontFamily);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input,
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  text-wrap: wrap;
+  padding-bottom: var(--baseFont);
+  line-height: 1.15em;
+}
+p {
+  line-height: 1.555em;
+  text-wrap: pretty;
+  padding-bottom: var(--baseFont);
+
+}
+button {
+  outline: none;
+  border: none;
+  padding: var(--smFontLite) var(--bigFontLite);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+/* NAV SECTION */
+#navbar{
+  background-color: var(--bgColor);
+
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_primary {
+  background-color: var(--accentColor);
+}
+.btn_primary a {
+  color: white;
+  font-weight: 700;
+  font-size: var(--smFontLite);
+  letter-spacing: .15rem;
+}
+
+ .heading  {
+  font-size: var(--bigFont);
+font-weight: 700;
+max-width: 44.25rem;
+}
+.nav_content p{
+     font-size: var(--smFontLite);
+     max-width: 39.625rem;;
+}
+.nav_img{
+     max-width: calc(39.68rem + 3.12rem);
+     /* width: 39.68rem; */
+     padding-top: 3.12rem;
+}
+.nav_img img{
+     /* width: 100%; */
+}
