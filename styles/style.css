@@ -9,6 +9,7 @@
   --neutralDarkColor: hsla(0, 0%, 15%, 0.6);
   --bgColor: rgba(229, 84, 115, 0.1);
   --bgColor2: rgba(39, 39, 39, 0.05);
+  --bgColor3: rgba(229, 84, 115, 0.5);
   --bgFlower1: rgba(167, 33, 98, 0.15);
   --bgFlower2: rgba(5, 151, 160, 0.15);
   --bgFlower3: rgba(71, 125, 17, 0.15);
@@ -107,6 +108,7 @@ button {
 .nav_content p {
   font-size: var(--smFontLite);
   max-width: 39.625rem;
+  color: var(--neutralDarkColor);
 }
 .nav_img {
   max-width: calc(39.68rem + 3.12rem);
@@ -177,4 +179,54 @@ h2 {
 }
 .featured_content span {
   letter-spacing: 0.25rem;
+}
+/* more */
+.main_featured {
+  background-color: var(--bgColor2);
+  /* background-color: aqua; */
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 5rem 0 9rem 0;
+}
+.main_featured img {
+  max-width: 5.5rem;
+  /* max-width: 100%; */
+}
+.main_featured .feature1 h3,
+.feature2 h3,
+.feature3 h3 {
+  padding-top: 1.5rem;
+  text-align: center;
+  /* padding-bottom: 5.45rem; */
+}
+#deal {
+  margin-top: 8rem;
+}
+.deal_section {
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.deal_content p {
+  font-size: var(--smFontLite);
+  max-width: 37.125rem;
+  color: var(--neutralDarkColor);
+}
+.deal_img {
+  padding: 6.25rem 0;
+  max-width: 19.875rem;
+}
+.deal_img img {
+  max-width: 100%;
+}
+.deal_btn {
+  text-align: center;
+  width: auto;
+  margin: auto;
 }
