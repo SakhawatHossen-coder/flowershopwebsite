@@ -230,3 +230,27 @@ h2 {
   width: auto;
   margin: auto;
 }
+/* <!-- Instagram Section --> */
+.insta_text {
+  display: block;
+  width: 37.125rem;
+  margin: auto;
+  margin-top: 8rem;
+}
+.insta_text p {
+  font-size: var(--smFontLite);
+  color: var(--neutralDarkColor);
+  text-align: center;
+}
+.insta_images{
+     display: flex;
+     justify-content: center;
+     gap: 2rem;
+     margin-top: 3rem;
+}
+.insta_img{
+     max-width: 21.375rem;
+}
+.insta_img img{
+     max-width: 100%;
+}
